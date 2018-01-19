@@ -17,7 +17,7 @@ keep_files:
 title: ASY's Blog
 subtitle: 谁说女程序猿一定是女汉子
 url: "http://lucky3mvp.github.io" # the base hostname & protocol for your site
-baseurl: "/index"
+baseurl: ""
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
