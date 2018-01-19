@@ -1,4 +1,27 @@
-/*	Default Layout: 1020px. 
+/*	电脑
+    Default Layout: 991px.
+*/
+@media (min-width: 992px)  {
+  /**
+   * 主要用于覆盖 bootstrap 的样式：
+   * @media (min-width: 992px)
+      bootstrap.min.css:5
+      .container {
+          width: 970px;
+      }
+   * 使得在大屏幕上，header 的内容不会因屏幕太宽而显得太居中
+   * 现在的方案为，在电脑上，不管大小屏，距离左右两边的距离是一定的，
+   * 变的只是中间的距离
+   */
+  header .container {
+    width: auto;
+    margin-left: 50px;
+    margin-right: 40px;
+  }
+}
+
+/*	平板
+    Default Layout: 991px.
     Gutters: 24px.
     Outer margins: 48px.
     Leftover space for scrollbars @1024px: 32px.
@@ -13,9 +36,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712    */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /*---------------------------------------------
-          Index Start 
------------------------------------------------*/
+  /*-------------------Index Start----------------------------------*/
   /*--wrapper Start --*/
   #wrapper {
     text-align: center;
@@ -64,7 +85,7 @@ px      68    160    252    344    436    528    620    712    */
     font-size: 15px;
   }
   /*--portfolio Start --*/
-  #portfolio-work .block .portfolio-manu {
+  #portfolio-work .block .portfolio-menu {
     padding-left: 0px;
   }
   #portfolio-work .block .portfolio-contant ul li a .img-heading {
@@ -123,7 +144,8 @@ px      68    160    252    344    436    528    620    712    */
   /*-------------------------contact close----------------------------*/
 
 }
-/*	Mobile Layout: 320px.
+/*	手机
+    Mobile Layout: 320px.
     Gutters: 24px.
     Outer margins: 34px.
     Inherits styles from: Default Layout.
@@ -217,7 +239,7 @@ px      68    160    252    */
     text-align: center;
   }
   /*-----------------------------Index Close----------------------------*/
- 
+
   /*-----------------------------Work Start------------------------------*/
   #slider-work {
     padding-top: 100px;
@@ -234,11 +256,11 @@ px      68    160    252    */
     line-height: 25px;
   }
   /*--portfolio Start --*/
-  #portfolio-work .block .portfolio-manu {
+  #portfolio-work .block .portfolio-menu {
     padding-left: 0px;
     text-align: center;
   }
-  #portfolio-work .block .portfolio-manu ul li {
+  #portfolio-work .block .portfolio-menu ul li {
     padding: 0 8px;
   }
   #portfolio-work .block .portfolio-contant ul li {
@@ -328,9 +350,12 @@ px      68    160    252    */
     display: block;
     width: 100%;
   }
+  #about .testimonial-carousel {
+    margin-top: 10px;
+  }
   /*----------------------------contact close-------------------------------*/
   /*--footer Start --*/
-  footer .footer-manu {
+  footer .footer-menu {
     display: none;
   }
 }
@@ -342,16 +367,6 @@ px      68    160    252    */
 cols    1     2      3      4      5
 px      68    160    252    344    436    */
 /*	Retina media query.
-  Overrides styles for devices with a 
+  Overrides styles for devices with a
   device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
-
-
-@media (min-width: 1200px)  {
-	header .container {
-		min-width: 1020px;
-		width: auto;
-		margin-left: 50px;
-		margin-right: 40px;
-	}
-}

@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/lucky3mvp/lucky3mvp.github.io/issues"
   },
-  "homepage": "https://lucky3mvp.github.io"
+  "homepage": "https://lucky3mvp.github.io",
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0"
+  }
 }
