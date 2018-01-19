@@ -1,0 +1,23 @@
+{
+  "name": "lucky3mvp.com",
+  "version": "1.0.0",
+  "description": "asy's personal blog",
+  "main": "_site/index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucky3mvp/lucky3mvp.github.io.git"
+  },
+  "keywords": [
+    "asy",
+    "blog"
+  ],
+  "author": "asy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucky3mvp/lucky3mvp.github.io/issues"
+  },
+  "homepage": "https://lucky3mvp.github.io"
+}
