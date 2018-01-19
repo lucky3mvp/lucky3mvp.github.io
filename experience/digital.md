@@ -1,6 +1,6 @@
 ---
-layout: work
-permalink: /work/digital-china
+layout: experience
+permalink: /experience/digital-china
 ---
 
 ## Digital China

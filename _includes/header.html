@@ -15,25 +15,20 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="{{ site.baseurl }}/">
-                <img src="{{ site.baseurl }}/img/logo.png" alt="Logo"> {{site.title}}
+                <img src="{{ site.baseurl }}{{site.logo}}" alt="Logo"> {{site.title}}
               </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
+                {% for nav in site.data.nav %}
                 <li>
-                  <a href="{{ site.baseurl }}/">Home</a>
+                  <a href="{{ site.baseurl }}{{nav.url}}">
+                    <span>{{ nav.name }}</span>
+                    <span>{{ nav.nameEng }}</span>
+                  </a>
                 </li>
-                <li>
-                  <a href="{{ site.baseurl }}/blog">Blog</a>
-                </li>
-                <li>
-                  <a href="{{ site.baseurl }}/work">Work</a>
-                </li>
-                <!-- <li><a href="#">Service</a></li> -->
-                <li>
-                  <a href="{{ site.baseurl }}/about">About</a>
-                </li>
+                {% endfor %}
               </ul>
             </div>
             <!-- /.navbar-collapse -->

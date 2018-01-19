@@ -1,6 +1,6 @@
 ---
-layout: work
-permalink: /work/baidu
+layout: experience
+permalink: /experience/baidu
 ---
 
 ## BaiDu

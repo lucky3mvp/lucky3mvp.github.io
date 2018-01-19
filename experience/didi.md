@@ -1,6 +1,6 @@
 ---
-layout: work
-permalink: /work/didi
+layout: experience
+permalink: /experience/didi
 ---
 
 ## DiDi

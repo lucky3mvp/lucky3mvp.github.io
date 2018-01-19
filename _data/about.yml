@@ -1,9 +1,9 @@
 - title: 旅行
-  image: /img/about/travel.jpeg
+  image: /assets/img/about/travel.jpeg
   msg: 曾梦想仗剑走天涯，看一看世界的繁华
 - title: 吃货
-  image: /img/about/eat.jpeg
+  image: /assets/img/about/eat.jpeg
   msg: 生活出了诗和远方，还有狂吃狂吃狂吃
 - title: 电竞
-  image: /img/about/game.jpeg
+  image: /assets/img/about/game.jpeg
   msg: Legends Never Die

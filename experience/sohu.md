@@ -1,6 +1,6 @@
 ---
-layout: work
-permalink: /work/sohu
+layout: experience
+permalink: /experience/sohu
 ---
 
 ### Sohu

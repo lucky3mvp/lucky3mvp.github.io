@@ -340,10 +340,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #clients-logo-section .clients-logo-img {
   padding: 0px 50px;
 }
-/*---------------------------------------------
-          Work Start
------------------------------------------------*/
-/*-- Slider-work Start --*/
+/*-----------------------Work Experience Start----------------------------*/
 #global-header {
   background: url("../img/slider-bg.jpg") no-repeat;
   background-size: cover;
@@ -411,9 +408,14 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #portfolio-work .block .portfolio-menu ul .active {
   color: #655E7A;
+  color: #d87171;
   position: relative;
 }
-#portfolio-work .block .portfolio-menu ul .active:before {
+#portfolio-work .block .portfolio-menu ul li.active:before {
+  opacity: 1
+}
+#portfolio-work .block .portfolio-menu ul li:before {
+  opacity: 0;
   content: "\f0d7";
   position: absolute;
   font-family: 'FontAwesome';
@@ -425,7 +427,7 @@ font header .navbar-default .navbar-nav li a:hover {
   top: 23px;
   margin: 0 auto;
   color: #fff;
-  text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);
+  text-shadow: 0 1px 0px rgba(10, 10, 10, 0.8);
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -433,23 +435,7 @@ font header .navbar-default .navbar-nav li a:hover {
   transition: all 0.4s ease-in-out;
 }
 #portfolio-work .block .portfolio-menu ul li:hover:before {
-  content: "\f0d7";
-  position: absolute;
-  font-family: 'FontAwesome';
-  bottom: -18px;
-  font-size: 30px;
-  width: 20px;
-  left: 0px;
-  right: 0px;
-  top: 24px;
-  margin: 0 auto;
-  color: #fff;
-  text-shadow: 0 1px 0px rgba(0, 0, 0, 0.9);
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  opacity: 1;
 }
 #portfolio-work .block .portfolio-contant ul li {
   float: left;
@@ -526,72 +512,9 @@ font header .navbar-default .navbar-nav li a:hover {
 #portfolio-work .block .mix {
   display: none;
 }
-/*-- wrapper-work Start --*/
-#wrapper-work {
-  overflow: hidden;
-  padding-top: 100px;
-}
-#wrapper-work ul li {
-  width: 50%;
-  float: left;
-  position: relative;
-}
-#wrapper-work ul li img {
-  width: 100%;
-  height: 100%;
-}
-#wrapper-work ul li .items-text {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.6);
-  padding-left: 44px;
-  padding-top: 140px;
-}
-#wrapper-work ul li .items-text h2 {
-  padding-bottom: 28px;
-  padding-top: 75px;
-  position: relative;
-}
-#wrapper-work ul li .items-text h2:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 75px;
-  height: 3px;
-  background: #fff;
-}
-#wrapper-work ul li .items-text p {
-  padding-top: 30px;
-  font-size: 16px;
-  line-height: 27px;
-  font-weight: 300;
-  padding-right: 80px;
-}
-/*-- features-work Start --*/
-#features-work {
-  padding-top: 50px;
-  padding-bottom: 75px;
-}
-#features-work .block ul li {
-  width: 19%;
-  text-align: center;
-  display: inline-block;
-  padding: 40px 0px;
-}
-/*---------------------------------------------
-          Work Close
------------------------------------------------*/
+/*---------------------------Work Experience Close--------------------------*/
 
-/*---------------------------------------------
-           Contact Start
------------------------------------------------*/
+/*---------------------------Contact Start--------------------------*/
 /*-- slider-contact Start --*/
 #slider-contact {
   background: url("../img/slider-bg.jpg") no-repeat;

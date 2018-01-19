@@ -1,6 +1,6 @@
 ---
-layout: work
-permalink: /work/netease
+layout: experience
+permalink: /experience/netease
 ---
 
 ## NetEase

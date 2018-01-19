@@ -1,0 +1,62 @@
+---
+layout: page
+title: Work Experience
+permalink: /experience/
+---
+
+<!-- Slider Start -->
+<section id="global-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1>.</h1>
+                    <p>啊啊啊asyyy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Start -->
+<section id="portfolio-work">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <div class="portfolio-menu">
+                {% if site.data.workExperience.size > 0 %}
+                {% assign types = site.data.workExperience | map: "type" | uniq %}
+                <ul>
+                    <li class="filter" data-filter="all">All</li>
+                    {% for type in types %}
+                    <li class="filter" data-filter=".{{type}}">{{type}}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+              </div>
+              <div class="portfolio-contant">
+                {% if site.data.workExperience.size > 0 %}
+                <ul id="portfolio-contant-active">
+                    {% for we in site.data.workExperience %}
+                    <li class="mix {{we.type}}">
+                      <a href="{{ site.baseurl }}/experience/{{we.url}}" class="format-size">
+                        <img src="{{ site.baseurl }}{{we.image}}" alt="">
+                        <div class="overly">
+                          <div class="position-center">
+                            <h2>{{ we.title }}</h2>
+                            <p>{{ we.position }}</p>
+                            <p>{{ we.time }}</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
