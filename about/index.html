@@ -1,0 +1,82 @@
+---
+layout: page
+title: About Me
+permalink: /about/
+---
+
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>I'm what I'm.</h1>
+          <p>我就是我，是颜色不一样的烟火.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- about start -->
+<section id="about">
+  <div class="container">
+    <div id="contact-box" class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <h2>蜗居在帝都的山城妹子</h2>
+          <ul class="address-block">
+            <li>
+              <i class="fa fa-map-marker"></i>北京市海淀区
+			</li>
+			<!-- <li>
+			  <i class="fa fa-university"></i>中国人民大学 - 计算机应用技术 - 研究生
+			</li> -->
+            <li>
+              <i class="fa fa-envelope"></i>Email: <a href="mailto:lucky_asyxu@163.com">lucky_asyxu@163.com</a>
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>Phone: <a href="tel:010-13311235203">13311235203</a>
+            </li>
+            <li>
+              <i class="fa fa-weixin"></i>Wechat: jing_asy
+            </li>
+          </ul>
+        </div>
+        <div class="block">
+          <h4>路漫漫其修远兮</h4>
+          <ul class="address-block">
+            <li>
+              <i class="fa fa-heart-o"></i>喜欢燕姿，却只听过一场演唱会
+            </li>
+            <li>
+              <i class="fa fa-bookmark-o"></i>想学韩语，还停留在“欧巴，撒浪嘿呦”的水平
+            </li>
+            <li>
+              <i class="fa fa-smile-o"></i>热爱工作，前端之路道阻且长但仍欲求索
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+          {% if site.data.about.size > 0 %}
+          <div class="testimonial-carousel">
+            <div id="testimonial-slider" class="owl-carousel">
+              {% for tm in site.data.about %}
+              <div>
+                <img src="{{ site.baseurl }}{{ tm.image }}" alt="{{tm.title}}" class="img">
+                <p class="title">
+                  <i class="fa fa-quote-left"></i>
+                  <span>{{ tm.title }}</span>
+                  <i class="fa fa-quote-right"></i>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                </p>
+                <p class="brief">{{tm.msg}}</p>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
