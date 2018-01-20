@@ -4,13 +4,17 @@ permalink: /
 ---
 
 <!-- Slider Start -->
-<section id="slider">
+<section id="home-header">
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-2">
         <div class="block">
-          <h1 class="animated fadeInUp">没想好写什么</h1>
-          <p class="animated fadeInUp">没想好</p>
+          <!-- <h1 class="animated fadeInUp">In me the tiger sniffs the rose.</h1>
+          <p class="animated fadeInUp">心有猛虎，细嗅蔷薇</p> -->
+          <h1 class="animated fadeInUp">Yesterday is history, </h1>
+          <h1 class="animated fadeInUp">tomorrow is a mystery, </h1>
+          <h1 class="animated fadeInUp">but today is a gift.</h1>
+          <!-- <p class="animated fadeInUp">心有猛虎，细嗅蔷薇</p> -->
         </div>
       </div>
     </div>
@@ -168,8 +172,8 @@ permalink: /
       </div>
       <div class="col-md-6">
         {% if site.data.testimonials.size > 0 %}
-        <div class="testimonial-carousel">
-          <div id="testimonial-slider" class="owl-carousel">
+        <div class="carousel">
+          <div id="carousel-slider" class="owl-carousel">
             {% for tm in site.data.testimonials %}
             <div>
               <img src="assets/img/home2.png" alt="IMG">

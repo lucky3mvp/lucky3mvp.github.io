@@ -23,10 +23,7 @@
               <ul class="nav navbar-nav navbar-right">
                 {% for nav in site.data.nav %}
                 <li>
-                  <a href="{{ site.baseurl }}{{nav.url}}">
-                    <span>{{ nav.name }}</span>
-                    <span>{{ nav.nameEng }}</span>
-                  </a>
+                  <a href="{{ site.baseurl }}{{nav.url}}">{{ nav.name }}</a>
                 </li>
                 {% endfor %}
               </ul>

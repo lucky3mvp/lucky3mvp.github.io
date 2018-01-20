@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
 
-  $("#portfolio-contant-active").mixItUp();
+  $("#companys-active").mixItUp();
 
 
-  $("#testimonial-slider").owlCarousel({
+  $("#carousel-slider").owlCarousel({
     paginationSpeed: 500,
     singleItem: true,
     autoPlay: 3000,

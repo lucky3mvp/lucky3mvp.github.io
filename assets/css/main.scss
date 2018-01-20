@@ -1,0 +1,20 @@
+---
+# jekyll 规定想要转换的 sass 文件，需要以两行 --- 开头
+---
+
+/**
+ * _sass 文件夹放一些使用 sass 写的样式表，
+ * 避免在写 css 的样式 #a.b.c d 这种样式层级太长了，累得慌
+ * 其中有一些原本是 css 的文件，被手动改成了 sass 的格式
+ * 而 .min.css 这几个文件，不方便自己手动转换，因此保留了 css 文件
+ */
+
+@import "./bootstrap.min.css";
+@import "./font-awesome.min.css";
+@import "./ionicons.min.css";
+@import "owl.carousel";
+@import "syntax";
+@import "base";
+@import "animate";
+@import "site";
+@import "responsive";

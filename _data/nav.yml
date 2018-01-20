@@ -1,12 +1,10 @@
 - name: 首页
-  nameEng: Home
   url: /
 - name: 文章
-  nameEng: Blog
   url: /blog
-- name: 工作经验
+- name: 作品
+  url: /works
+- name: 工作经历
   url: /experience
-  nameEng: Work Experience
 - name: 关于
-  nameEng: About
   url: /about

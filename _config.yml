@@ -14,6 +14,7 @@ keep_files:
 
 
 # Site settings
+author: ASY
 title: ASY's Blog
 subtitle: 谁说女程序猿一定是女汉子
 url: "http://lucky3mvp.github.io" # the base hostname & protocol for your site
@@ -25,6 +26,11 @@ markdown: kramdown
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
+
+# Sass
+sass:
+  style: :compressed
+  sass_dir: assets/_sass
 
 # Category descriptions (for archive pages)
 descriptions:
