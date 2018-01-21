@@ -35,3 +35,25 @@ a {
     text-decoration: none !important;
   }
 }
+
+.section-title {
+  margin-bottom: 70px;
+  h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  p {
+    font-family: 'Volkhov', serif;
+    font-style: italic;
+    color: #666;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}

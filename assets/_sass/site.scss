@@ -12,33 +12,6 @@
 @import url(//fonts.googleapis.com/css?family=Volkhov:400italic);
 
 
-.section-title {
-  margin-bottom: 70px;
-  h2 {
-    text-transform: uppercase;
-    font-size: 28px;
-    font-weight: 600;
-  }
-  p {
-    font-family: 'Volkhov', serif;
-    font-style: italic;
-    color: #666;
-  }
-}
-
-
-.italic {
-  font-style: italic;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.center-text {
-  text-align: center;
-}
-
 /*
  * 本样式表主要是站点在电脑上的样式表现
  * 关于站点怎么适配 ipad 和 手机屏幕
@@ -317,12 +290,15 @@ footer {
     }
   }
   .companys {
+    ul {
+      margin-right: -30px;
+    }
     li {
       float: left;
-      // width: 33.3%;
-      // padding: 6px;
-      width: 32%;
-      margin: 6px;
+      // 容器宽是990px;
+      width: 310px;
+      margin: 10px 0;
+      margin-right: 30px;
       box-sizing: border-box;
       overflow: hidden;
       position: relative;
