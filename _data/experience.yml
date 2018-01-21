@@ -4,27 +4,32 @@
   title: NetEase
   position: 网易高级前端开发工程师
   time: 2016.09 - 至今
+  more: true
 - type: sohu
   url: sohu
   image: /assets/img/experience/sohu.png
   title: Sohu
   position: 搜狐前端开发工程师
   time: 2015.07 - 2016.08
+  more: true
 - type: intern
   url: didi
   image: /assets/img/experience/didi.png
   title: DiDi Intern
   position: 滴滴数据平台前端开发实习生
   time: 2014.06 - 2014.12
+  more: false
 - type: intern
   url: baidu
   image: /assets/img/experience/baidu.png
   title: Baidu Intern
   position: 百度开发测试实习生
   time: 2013.06 - 2013.10
+  more: false
 - type: intern
   url: digital-china
   image: /assets/img/experience/digital.png
-  title: 神州数码测试开发实习生
-  position: Digital China
+  title: Digital China Intern
+  position: 神州数码测试开发实习生
   time: 2012.06 - 2012.09
+  more: false

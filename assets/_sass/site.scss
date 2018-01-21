@@ -48,33 +48,67 @@
 /*-- Header Start --*/
 header {
   background: #fff;
-  padding: 10px 0;
+  padding: 0;
   .navbar {
     margin-bottom: 0px;
     border: 0px;
   }
-  .navbar-brand {
-    padding: 5px 0 0 0;
-    font-size: 22px;
-    & > img {
-      display: inline-block;
-      height: 100%;
-      margin-right: 10px;
+  .navbar-header {
+    .navbar-brand {
+      padding: 10px 0 0 0;
+      font-size: 22px;
+      color: #333;
+      height: 60px;
+      & > img {
+        display: inline-block;
+        height: 90%;
+        margin-right: 10px;
+      }
     }
   }
   .navbar-default {
     background: none;
     border: 0px;
     .navbar-nav {
-      padding-top: 8px;
       li {
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          opacity: 0;
+          height: 3px;
+          width: 100%;
+          background: #009999;
+          transition: all ease-in-out 0.3s;
+        }
+        &:hover {
+          color: #009999;
+          &:after {
+            opacity: 1
+          }
+        }
+        &.active {
+          &:after {
+            opacity: 1
+          }
+          a {
+            background: #00999914;
+            color: #009999;
+            &:hover {
+              background: #00999914;
+            }
+          }
+        }
         a {
-          color: #333333;
-          padding: 10px 26px;
+          height: 60px;
+          line-height: 60px;
+          padding: 0 26px;
           font-size: 15px;
-          text-align: center;
+          color: #333333;
           &:hover {
-            color: #000;
+            color: #009999;
+            transition: color ease-in-out 0.3s;
           }
         }
       }
@@ -183,7 +217,7 @@ footer {
 
 /*-- 通用的内容介绍容器，在 post.html, experience.html 中均有用到 --*/
 #intro {
-  padding: 100px 0;
+  padding: 50px 0;
   .block {
     h2 {
       padding-top: 35px;
