@@ -8,3 +8,4 @@
 [fontawesome](http://www.fontawesome.com.cn/faicons/)
 [bootstrap](http://www.bootcss.com/)
 [mixItUp](https://github.com/patrickkunka/mixitup/)
+[glide](http://glide.jedrzejchalubek.com/docs.html)

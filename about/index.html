@@ -58,24 +58,26 @@ permalink: /about/
         </div>
       </div>
       <div class="col-md-6 col-sm-12">
-          {% if site.data.about.size > 0 %}
-          <div class="carousel">
-            <div id="carousel-slider" class="owl-carousel">
+        {% if site.data.about.size > 0 %}
+        <div id="Glide" class="glide glide-self">
+          <div class="glide__wrapper">
+            <ul class="glide__track">
               {% for tm in site.data.about %}
-              <div>
-                <img src="{{ site.baseurl }}{{ tm.image }}" alt="{{tm.title}}" class="img">
-                <p class="title">
-                  <i class="fa fa-quote-left"></i>
-                  <span>{{ tm.title }}</span>
-                  <i class="fa fa-quote-right"></i>
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                </p>
-                <p class="brief">{{tm.msg}}</p>
-              </div>
+              <li class="glide__slide">
+                  <img src="{{ site.baseurl }}{{ tm.image }}" alt="{{tm.title}}" class="img">
+                  <p class="title">
+                    <i class="fa fa-quote-left"></i>
+                    <span>{{ tm.title }}</span>
+                    <i class="fa fa-quote-right"></i>
+                  </p>
+                  <p class="brief">{{tm.msg}}</p>
+              </li>
               {% endfor %}
-            </div>
+            </ul>
           </div>
-          {% endif %}
+          <div class="glide__bullets"></div>
+        </div>
+        {% endif %}
       </div>
     </div>
   </div>
