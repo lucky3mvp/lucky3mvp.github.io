@@ -9,13 +9,14 @@
  * 而 .min.css 这几个文件，不方便自己手动转换，因此保留了 css 文件
  */
 
-@import "./bootstrap.min.css";
+// @import "./bootstrap.min.css";
+@import "./reset.css";
 @import "./font-awesome.min.css";
 @import "./ionicons.min.css";
 @import "./glide.core.css";
 @import "./glide.theme.css";
 @import "syntax";
-@import "base";
+@import "common";
 @import "animate";
 @import "site";
-@import "responsive";
+// @import "responsive";

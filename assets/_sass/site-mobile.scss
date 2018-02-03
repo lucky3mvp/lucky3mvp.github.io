@@ -1,51 +1,27 @@
 /*
- * This is the main css file for computer and ipad device
+ * This is the main css file that ships with the airspace theme.
+ * In airspace, it is called style.css
+ * However, style.css now holds additional styles for this jekyll port. (Not written by ThemeFisher)
+ * The original style.css is now called airspace.css
  *
  */
+
 
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 @import url(//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(//fonts.googleapis.com/css?family=Volkhov:400italic);
 
-.g-ctn {
-  display: block;
-  width: auto;
-  margin: 0 50px;
-}
+
+/*
+ * 本样式表主要是站点在电脑上的样式表现
+ * 关于站点怎么适配 ipad 和 手机屏幕
+ * 由样式表 responsive 负责
+ */
 
 /*-- Header Start --*/
 header {
-  padding: 10px 0;
-  position: relative;
-  z-index: 1;
   background: transparent;
-  .logo {
-    height: 60px;
-    color: rgba(255, 255, 255, .7);
-    img {
-      width: 50px;
-      height: 50px;
-      display: inline-block;
-      margin-right: 10px;
-      margin-top: 5px;
-    }
-    span {
-      display: inline-block;
-      line-height: 60px;
-      font-size: 24px;
-    }
-  }
-  .nav {
-    li {
-      float: left;
-    }
-    a {
-      padding: 0 25px;
-      display: block;
-      height: 60px;
-      line-height: 60px;
-    }
-  }
+  padding: 10px 0;
   .navbar {
     margin-bottom: 0px;
     border: 0px;
@@ -133,7 +109,6 @@ footer {
 
 /*-- 首页大头图 --*/
 #home-header {
-  margin-top: -80px;
   background: url("../img/header-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -175,7 +150,6 @@ footer {
 
 /*-- 非首页头图 --*/
 #global-header {
-  margin-top: -80px;
   background: url("../img/header-bg.jpg") no-repeat;
   background-size: cover;
   padding-top: 100px;

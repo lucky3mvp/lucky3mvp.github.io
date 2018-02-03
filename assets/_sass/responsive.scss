@@ -3,15 +3,25 @@
  */
 @media only screen and (min-width: 992px) {
   header {
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    padding: 10px 0;
     .container {
       width: auto;
       margin-left: 50px;
       margin-right: 40px;
     }
   }
+  #global-header {
+    margin-top: -80px;
+    padding-top: 145px;
+  }
   #home-header {
+    margin-top: -80px;
     box-sizing: border-box;
-    height: calc(100vh - 60px);
+    height: 100vh;
+    padding-top: 200px;
   }
   .post,
   .experience {
@@ -40,6 +50,25 @@ px      68    160    252    344    436    528    620    712    804    896    */
 cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712    */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  header {
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    padding: 10px 0;
+    height: auto;
+  }
+  #global-header {
+    margin-top: -80px;
+    padding-top: 145px;
+    background-size: contain;
+  }
+  #home-header {
+    margin-top: -80px;
+    box-sizing: border-box;
+    padding-top: 200px;
+    background-size: auto;
+  }
+
   /*-- footer --*/
   footer {
     .navbar {
