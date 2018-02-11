@@ -1,65 +1,51 @@
 ---
-  layout: page
+  layout: default
   title: Experience
   permalink: /experience/
 ---
 
-<!-- Slider Start -->
-<section id="global-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <!-- <h1>Live as if you were to Die tomorrow.</h1> -->
-          <h1>Learn as if you were to live forever.</h1>
-          <p>三人行必有我师焉，择其善者而从之，其不善者则改之.</p>
-        </div>
-      </div>
-    </div>
+<section class="global-header">
+  <div class="pos-rel">
+    <!-- <h1>Live as if you were to Die tomorrow.</h1> -->
+    <h1>Learn as if you were to live forever.</h1>
+    <p>三人行必有我师焉，择其善者而从之，其不善者则改之.</p>
   </div>
 </section>
 
-<!-- Experience Start -->
-<section id="experience">
+<section class="experience-index">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <div class="menu">
-            {% if site.data.experience.size > 0 %} {% assign types = site.data.experience | map: "type" | uniq %}
-            <ul>
-              <li class="filter" data-filter="all">All</li>
-              {% for type in types %}
-              <li class="filter" data-filter=".{{type}}">{{type}}</li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-          </div>
-          <div class="companys">
-            {% if site.data.experience.size > 0 %}
-            <ul id="companys-active">
-              {% for we in site.data.experience %}
-              <li class="mix {{we.type}}">
-                <a href="{{ site.baseurl }}/experience/{{we.url}}" class="format-size">
-                  <img src="{{ site.baseurl }}{{we.image}}" alt="">
-                  <div class="overly">
-                    <div class="position-center">
-                      <h2>{{ we.title }}</h2>
-                      <p>{{ we.position }}</p>
-                      <p>{{ we.time }}</p>
-                    </div>
-                    {% if we.more %}
-                    <p class="more">查看更多 >></p>
-                    {% endif %}
-                  </div>
-                </a>
-              </li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-          </div>
-        </div>
-      </div>
+    <div class="menu">
+      {% if site.data.experience.size > 0 %} {% assign types = site.data.experience | map: "type" | uniq %}
+      <ul>
+        <li class="filter" data-filter="all">All</li>
+        {% for type in types %}
+        <li class="filter" data-filter=".{{type}}">{{type}}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    <div class="companys">
+      {% if site.data.experience.size > 0 %}
+      <ul id="companys-active">
+        {% for we in site.data.experience %}
+        <li class="mix {{we.type}}">
+          <a href="{{ site.baseurl }}/experience/{{we.url}}" class="format-size">
+            <img src="{{ site.baseurl }}{{we.image}}" alt="">
+            <div class="overly">
+              <div class="position-center">
+                <h2>{{ we.title }}</h2>
+                <p>{{ we.position }}</p>
+                <p>{{ we.time }}</p>
+              </div>
+              {% if we.more %}
+              <p class="more">查看更多 >></p>
+              {% endif %}
+            </div>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
     </div>
   </div>
 </section>

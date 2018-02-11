@@ -1,27 +1,18 @@
 ---
-layout: page
+layout: default-white
 ---
 
 <div class="post">
-  <!-- Wrapper Start -->
-  <section id="intro" style="border: 1px dotted #ddd;">
-    <div class="container">
-      <div class="row">
-        <div>
-          <div class="block">
-            <h1>{{ page.title }}</h1>
-            <div class="post-info-wrapper">
-              <p class="italic">By <span class="bold">{{ page.author }}</span> on <span class="bold">{{ page.date | date: "%Y-%m-%d" }}</span></p>
-            </div>
-            <hr />
-            <p>{{ content }}</p>
-          </div>
-        </div><!-- .col-md-7 close -->
-      </div>
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    <div class="post-info-wrapper">
+      <p class="italic">By <span class="bold">{{ page.author }}</span> on <span class="bold">{{ page.date | date: "%Y-%m-%d" }}</span></p>
     </div>
-  </section>
+    <hr />
+    {{ content }}
+  </div>
   <p class="back">
-    <a href="{{ site.baseurl }}/blog">Back to Blog</a>
+    <a href="{{ site.baseurl }}/posts">Back to Post</a>
   </p>
 </div>
 

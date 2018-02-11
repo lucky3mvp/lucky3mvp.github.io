@@ -1,36 +1,26 @@
 ---
-layout: page
+layout: default
 title: About Me
 permalink: /about/
 ---
 
-<!-- Slider Start -->
-<section id="global-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h1>I'm what I'm.</h1>
-          <p>我就是我，是颜色不一样的烟火.</p>
-        </div>
-      </div>
-    </div>
+<section class="global-header">
+  <div class="pos-rel">
+    <h1>I'm What I'm.</h1>
+    <p>我就是我，是颜色不一样的烟火.</p>
   </div>
 </section>
-<!-- about start -->
-<section id="about">
+
+<section class="about">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-sm-12">
+    <div class="inner clearfix">
+      <div class="left basic">
         <div class="block">
           <h2>蜗居在帝都的山城妹子</h2>
           <ul class="basic-info">
             <li>
               <i class="fa fa-map-marker"></i>北京市海淀区
             </li>
-            <!-- <li>
-              <i class="fa fa-university"></i>中国人民大学 - 计算机应用技术 - 研究生
-            </li> -->
             <li>
               <i class="fa fa-envelope"></i>Email: <a href="mailto:lucky_asyxu@163.com">lucky_asyxu@163.com</a>
             </li>
@@ -57,7 +47,7 @@ permalink: /about/
           </ul>
         </div>
       </div>
-      <div class="col-md-6 col-sm-12">
+      <div class="right carousel">
         {% if site.data.about.size > 0 %}
         <div id="Glide" class="glide glide-self">
           <div class="glide__wrapper">

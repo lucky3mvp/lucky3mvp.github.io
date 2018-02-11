@@ -1,0 +1,25 @@
+---
+layout: default
+title: Posts
+permalink: /posts/
+---
+<section class="global-header">
+  <div class="pos-rel">
+    <!-- <h1>Good Good Study, Day Day Up.</h1> -->
+    <h1>No pains, no gains.</h1>
+    <p>路漫漫其修远兮，吾将上下而求索.</p>
+  </div>
+</section>
+
+<section class="post-index">
+  {% for post in site.posts %}
+  <div class="post-area container">
+    <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+    <p class="post-date">{{ post.date | date: "%Y-%m-%d" }}</p>
+    <p>
+      {{ post.content | strip_html | truncatewords: 40 }}
+    </p>
+  </div>
+  {% endfor %}
+</section>
+

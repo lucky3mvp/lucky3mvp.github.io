@@ -1,63 +1,36 @@
 /**
- * 大屏幕
- * min-width 1600px;
- */
- @media only screen and (min-width: 1600px) {
-  .g-ctn {
-    display: block;
-    width: auto;
-    margin: 0 100px;
-  }
-  .container {
-    width: 1020px;
-    margin: 0 auto;
-  }
-}
-
-/**
  * 电脑
- * min-width: 992px;
- * max-width: 1599px;
  */
-@media only screen and (min-width: 992px) and (max-width: 1599px) {
-  .g-ctn {
-    display: block;
-    width: auto;
-    margin: 0 50px;
+@media only screen and (min-width: 992px) {
+  header {
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    padding: 10px 0;
+    .container {
+      width: auto;
+      margin-left: 50px;
+      margin-right: 40px;
+    }
   }
-  .container {
-    width: 1020px;
-    margin: 0 auto;
+  .global-header {
+    margin-top: -80px;
+    padding-top: 145px;
   }
-  // header {
-  //   background: transparent;
-  //   position: relative;
-  //   z-index: 1;
-  //   padding: 10px 0;
-  //   .container {
-  //     width: auto;
-  //     margin-left: 50px;
-  //     margin-right: 40px;
-  //   }
-  // }
-  // .global-header {
-  //   margin-top: -80px;
-  //   padding-top: 145px;
-  // }
-  // .home-header {
-  //   margin-top: -80px;
-  //   box-sizing: border-box;
-  //   height: 100vh;
-  //   padding-top: 200px;
-  // }
-  // .post,
-  // .experience {
-  //   .back {
-  //     text-align: center;
-  //     padding: 30px;
-  //     margin: 0;
-  //   }
-  // }
+  .home-header {
+    margin-top: -80px;
+    box-sizing: border-box;
+    height: 100vh;
+    padding-top: 200px;
+  }
+  .post,
+  .experience {
+    .back {
+      text-align: center;
+      padding: 30px;
+      margin: 0;
+    }
+  }
 }
 
 
@@ -77,15 +50,6 @@ px      68    160    252    344    436    528    620    712    804    896    */
 cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712    */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .g-ctn {
-    display: block;
-    width: auto;
-    margin: 0 50px;
-  }
-  .container {
-    width: 1020px;
-    margin: 0 auto;
-  }
   header {
     background: transparent;
     position: relative;
@@ -131,7 +95,7 @@ px      68    160    252    344    436    528    620    712    */
   }
 
   /*-- Experience --*/
-  .experience {
+  #experience {
     .menu {
       padding-left: 0px;
     }
@@ -174,7 +138,7 @@ px      68    160    252    344    436    528    620    712    */
   }
 
   /*-- About --*/
-  .about {
+  #about {
     .block {
       width: 88%;
       margin: 0 auto;
@@ -342,7 +306,6 @@ px      68    160    252    */
   }
 
 }
-
 /*	Wide Mobile Layout: 480px.
     Gutters: 24px.
     Outer margins: 22px.

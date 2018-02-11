@@ -2,6 +2,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
+  color: #333;
 }
 h1,
 h2,
@@ -25,20 +26,28 @@ p {
 }
 a {
   text-decoration: none;
+  color: #428bca;
+  &:hover,
+  &:focus {
+    color: #2a6496;
+  }
   &:active,
   &:focus {
     text-decoration: none;
   }
 }
-
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
 .left {
   float: left;
 }
-
 .right {
   float: right;
 }
-
 .clearfix {
   zoom: 1;
   &:before,
@@ -52,4 +61,11 @@ a {
     font-size: 0;
     height: 0;
   }
+}
+.pos-rel {
+  position: relative;
+  z-index: 1
+}
+.pos-abs {
+  position: absolute;
 }

@@ -6,7 +6,7 @@ $(document).ready(function () {
     autoplay: 3000
   });
 
-  let lis = $('.navbar-nav li'); // 得到的 lis 是 object
+  let lis = $('.nav li'); // 得到的 lis 是 object
   let pathname = window.location.pathname;
   for (let key in Object.keys(lis)) {
     let item = lis[key];
@@ -31,13 +31,8 @@ $(document).ready(function () {
   // }
 
   // Counter
-  $('.counter').counterUp({
-    delay: 10,
-    time: 1000
-  });
-
+  // $('.counter').counterUp({
+  //   delay: 10,
+  //   time: 1000
+  // });
 });
-
-
-
-

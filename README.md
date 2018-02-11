@@ -9,3 +9,5 @@
 [bootstrap](http://www.bootcss.com/)
 [mixItUp](https://github.com/patrickkunka/mixitup/)
 [glide](http://glide.jedrzejchalubek.com/docs.html)
+[wordcloud2](https://github.com/timdream/wordcloud2.js)
+[animate.css](https://daneden.github.io/animate.css/)
