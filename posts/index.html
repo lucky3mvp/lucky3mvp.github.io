@@ -11,9 +11,9 @@ permalink: /posts/
   </div>
 </section>
 
-<section class="post-index">
+<section class="post-index container">
   {% for post in site.posts %}
-  <div class="post-area container">
+  <div class="post-area">
     <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
     <p class="post-date">{{ post.date | date: "%Y-%m-%d" }}</p>
     <p>

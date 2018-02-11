@@ -60,38 +60,41 @@
   // }
 }
 
-
-/*	平板
-    Default Layout: 991px.
-    Gutters: 24px.
-    Outer margins: 48px.
-    Leftover space for scrollbars @1024px: 32px.
--------------------------------------------------------------------------------
-cols    1     2      3      4      5      6      7      8      9      10
-px      68    160    252    344    436    528    620    712    804    896    */
-/*		Tablet Layout: 768px.
-    Gutters: 24px.
-    Outer margins: 28px.
-    Inherits styles from: Default Layout.
------------------------------------------------------------------
-cols    1     2      3      4      5      6      7      8
-px      68    160    252    344    436    528    620    712    */
+/**
+ * 平板
+ * min-width: 768px;
+ * max-width: 991px;
+ */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .g-ctn {
     display: block;
     width: auto;
-    margin: 0 50px;
+    margin: 0 30px;
   }
   .container {
-    width: 1020px;
-    margin: 0 auto;
+    // width: 680px;
+    // margin: 0 auto;
+    width: auto;
+    margin: 0 80px;
   }
   header {
-    background: transparent;
-    position: relative;
-    z-index: 1;
-    padding: 10px 0;
-    height: auto;
+    .nav {
+      li {
+        &.active {
+          a {
+            &:before {
+              right: 15px;
+            }
+          }
+        }
+      }
+      a {
+        padding: 0 15px;
+        &:before {
+          left: 15px;
+        }
+      }
+    }
   }
   .global-header {
     margin-top: -80px;
@@ -101,104 +104,126 @@ px      68    160    252    344    436    528    620    712    */
   .home-header {
     margin-top: -80px;
     box-sizing: border-box;
-    padding-top: 200px;
-    background-size: auto;
+    padding: 120px 0 90px 0;
+    background-size: contain;
+    .inner {
+      margin-left: 10%;
+    }
+    h1 {
+      font-size: 32px;
+    }
   }
 
-  /*-- footer --*/
-  footer {
-    .navbar {
-      margin-bottom: 0px;
-      border: 0px;
-      min-height: 40px;
+  /*-- 首页相关 --*/
+  .home-sec {
+    .section-title {
+      line-height: 1.5;
+      margin-bottom: 20px;
+      h2 {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 16px;
+      }
     }
-    .navbar-default {
-      border: 0px;
-      width: 68%;
-      .navbar-nav {
-        li {
-          a {
-            color: #494949;
-            padding: 10px 10px;
-            font-size: 15px;
-            &:hover {
-              color: #000;
-            }
-          }
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+  .home-who {
+    .bkg-right {
+      padding: 50px 180px 50px 0;
+      background: url(../img/home1.png) no-repeat;
+      background-size: 213px 189px;
+      background-position: 410px 70px;
+      height: 240px;
+      margin: 0;
+    }
+  }
+  .home-what {
+    .bkg-full {
+      padding: 70px 0 50px;
+      background: url(../img/home2.jpg) no-repeat;
+      background-attachment: scroll; // 平板和手机就不 fixed 了
+      background-position: 30% 80%;
+      background-size: auto 400px;
+    }
+  }
+  .home-wish {
+    padding: 60px 0 50px;
+    .inner {
+      width: 680px;
+      margin: 0 auto;
+    }
+    .section-title {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .wish-list {
+      margin-top: 40px;
+      margin-right: -20px;
+      padding: 0;
+      .wish-item {
+        margin-right: 20px;
+        padding: 40px 0 0;
+        width: 155px;
+        border: 1px solid #dbdbdb;
+        border-radius: 50%;
+        height: 155px;
+        .text {
+          display: none;
+        }
+        .icon {
+          font-size: 40px;
         }
       }
     }
   }
 
-  /*-- Experience --*/
-  .experience {
-    .menu {
-      padding-left: 0px;
-    }
+  /*-- 工作经验 --*/
+  .experience-index {
     .companys {
       ul {
-        margin-right: -30px;
+        margin-right: -28px;
       }
       li {
-        // 容器的width是 720px;
-        width: 220px;
-        margin: 10px 0;
-        margin-right: 30px;
-        .img-heading {
-          padding: 5px 0 5px 13px;
-          h2 {
-            font-size: 20px;
-            line-height: 25px;
-          }
-          p {
-            font-size: 11px;
-            line-height: 20px;
-          }
-        }
-        .overlay {
-          padding-left: 15px;
-          h2 {
-            padding-top: 30px;
-            padding-bottom: 15px;
-            font-size: 20px;
-            line-height: 25px;
-          }
-          p {
-            font-size: 11px;
-            line-height: 20px;
-            padding-top: 15px;
-          }
-        }
+        // 容器宽是608px;
+        width: 290px;
+        margin-right: 28px;
       }
     }
   }
+  .post-index {
+    .post-area {
+      padding: 40px 0;
+    }
+  }
+  .post,
+  .experience {
+    .back {
+      padding: 20px;
+      margin-top: 30px;
+    }
+  }
 
-  /*-- About --*/
+
+  /*-- 关于 --*/
   .about {
+    .basic,
+    .carousel {
+      width: 100%;
+      float: none;
+    }
     .block {
       width: 88%;
       margin: 0 auto;
     }
     .glide-self {
-      margin-top: 50px;
+      margin-top: 60px;
     }
   }
-
-  #intro {
-    .container {
-      padding: 0 50px;
-    }
-  }
-
-  .post,
-  .experience {
-    .back {
-      text-align: center;
-      padding: 20px;
-      margin: 0;
-    }
-  }
-
 }
 
 /*	手机
