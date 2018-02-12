@@ -1,6 +1,10 @@
 <header>
   <div class="g-ctn clearfix">
     <a class="logo left" href="{{ site.baseurl }}/">{{site.title}}</a>
+    <div class="mobile-nav" id="mobile-nav">
+      <i class="fa fa-bars"></i>
+    </div>
+
     <ul class="nav right">
       {% for nav in site.data.nav %}
       <li data-nav="{{nav.url}}">

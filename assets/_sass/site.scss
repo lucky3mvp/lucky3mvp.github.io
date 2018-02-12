@@ -119,6 +119,9 @@ header {
       }
     }
   }
+  .mobile-nav {
+    display: none;
+  }
 }
 
 /*-- 大头图 --*/
@@ -187,6 +190,9 @@ header {
     font-weight: 300;
     letter-spacing: 1px;
     word-spacing: 3px;
+  }
+  .mobile {
+    display: none;
   }
 }
 
@@ -537,6 +543,7 @@ header {
         margin-right: 15px;
         font-size: 20px;
         width: 20px;
+        text-align: center;
       }
     }
   }

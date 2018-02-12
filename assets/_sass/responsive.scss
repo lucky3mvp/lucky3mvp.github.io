@@ -72,8 +72,6 @@
     margin: 0 30px;
   }
   .container {
-    // width: 680px;
-    // margin: 0 auto;
     width: auto;
     margin: 0 80px;
   }
@@ -169,9 +167,10 @@
         margin-right: 20px;
         padding: 40px 0 0;
         width: 155px;
-        border: 1px solid #dbdbdb;
-        border-radius: 50%;
         height: 155px;
+        border-radius: 50%;
+        border-top: 1px solid #efefef;
+        box-shadow: 0px 10px 20px rgba(55,66,77,0.2);
         .text {
           display: none;
         }
@@ -208,7 +207,6 @@
     }
   }
 
-
   /*-- 关于 --*/
   .about {
     .basic,
@@ -226,14 +224,10 @@
   }
 }
 
-/*	手机
-    Mobile Layout: 320px.
-    Gutters: 24px.
-    Outer margins: 34px.
-    Inherits styles from: Default Layout.
----------------------------------------------
-cols    1     2      3
-px      68    160    252    */
+/**
+ * 手机
+ * max-width: 767px;
+ */
 @media only screen and (max-width: 767px) {
   h2 {
     font-size: 18px;
@@ -241,62 +235,225 @@ px      68    160    252    */
   p {
     font-size: 13px;
   }
-
+  .g-ctn {
+    display: block;
+    width: auto;
+    margin: 0 15px;
+  }
+  .container {
+    width: auto;
+    margin: 0 40px;
+  }
   /*-- header --*/
+  .white {
+    header {
+      .mobile-nav {
+        .fa-bars {
+          color: #666;
+        }
+      }
+      .nav {
+        background: rgba(255, 255, 255, .9);
+        border-color: #efefef;
+        &:before {
+          border-color: transparent transparent #efefef transparent;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          top: -14px;
+          right: 12px;
+          z-index: 11;
+          border-width: 8px;
+          border-style: solid;
+          border-color: transparent transparent #fefefe transparent;
+        }
+        li {
+          a {
+            color: #454545;
+          }
+        }
+      }
+    }
+  }
   header {
-    padding: 0;
-    .navbar-header {
+    .mobile-nav {
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      .fa-bars {
+        // color: #888;
+        color: rgba(255,255,255,0.8);
+        width: 20px;
+        text-align: center;
+      }
+    }
+    .logo {
+      font-size: 20px;
+    }
+    .nav {
+      float: none;
+      position: absolute;
+      z-index: 10;
+      right: 15px;
+      top: 70px;
+      padding: 10px 0;
+      border: 1px solid #666;
+      border-radius: 5px;
+      background: rgba(50, 46, 64, 0.8);
+      display: none;
+      &.show {
+        display: block;
+        animation-duration: 0.2s;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        right: 12px;
+        z-index: 11;
+        border-width: 8px;
+        border-style: solid;
+        border-color: transparent transparent #413d4d transparent;
+      }
+      li {
+        float: none;
+        display: block;
+        a {
+          height: 32px;
+          line-height: 32px;
+          color: #aaa;
+          &::before {
+            bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+  .global-header {
+    margin-top: -80px;
+    padding: 90px 0 40px;
+    background-size: contain;
+    h1 {
+      font-size: 20px;
+      padding-bottom: 8px;
+    }
+    .other {
+      display: none;
+    }
+    .mobile {
+      display: block;
+      letter-spacing: 3px;
+    }
+  }
+  .home-header {
+    margin-top: -80px;
+    box-sizing: border-box;
+    padding: 80px 0 30px 0;
+    background-size: contain;
+    .inner {
       margin-left: 0;
     }
-    .navbar-brand {
-      padding: 0;
-      margin-top: 11px;
-      margin-bottom: 11px;
+    h1 {
+      font-size: 20px;
+      letter-spacing: 6px;
+      line-height: 1.5;
     }
-    .navbar-default {
-      .navbar-toggle {
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
+    p {
+      font-size: 13px;
     }
   }
 
-  /*-- 首页大头图 --*/
-  .home-header {
-    padding-top: 90px;
-    padding-bottom: 100px;
-    .block {
-      padding-left: 0px;
-      h1 {
-        font-size: 20px;
+  /*-- 首页相关 --*/
+  .home-sec {
+    .section-title {
+      line-height: 1.5;
+      margin-bottom: 12px;
+      h2 {
+        font-size: 18px;
+        font-weight: 600;
       }
       p {
-        font-size: 13px;
+        font-size: 14px;
+      }
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 8px 0 8px;
+    }
+  }
+  .home-who {
+    .bkg-right {
+      padding: 30px 0 20px 0;
+      background: url(../img/home1.png) no-repeat;
+      background-size: 100px auto;
+      background-position: top right;
+      height: 240px;
+      margin: 0;
+    }
+  }
+  .home-what {
+    .container {
+      margin-right: 20px;
+    }
+    .bkg-full {
+      padding: 30px 0 20px;
+      background: url(../img/home2.jpg) no-repeat;
+      background-attachment: scroll; // 平板和手机就不 fixed 了
+      background-position: left center;
+      background-size: auto 150px;
+    }
+    .inner {
+      padding-left: 38%;
+    }
+  }
+  .home-wish {
+    padding: 30px 0 20px;
+    .inner {
+      width: 100%;
+    }
+    .section-title {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .wish-list {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      .wish-item {
+        margin-top: 20px;
+        padding: 20px 0 0;
+        margin-right: 0;
+        .title {
+          padding-top: 10px;
+        }
+        .text {
+          display: none;
+        }
+        .icon {
+          font-size: 32px;
+        }
       }
     }
   }
 
-  /*-- 非首页头图 --*/
-  .global-header {
-    padding: 50px 0;
-    .block {
-      padding-left: 0;
-      h1 {
-        font-size: 28px;
-      }
-    }
-  }
-
-  /*-- Experience --*/
-  #experience {
+  /*-- 工作经验 --*/
+  .experience-index {
     padding: 0;
     .menu {
       padding-left: 0px;
       text-align: center;
-      /* 移动端不显示 filter, mixItUp 不支持移动端 */
-      display: none;
-      li {
-        padding: 0 8px;
+      margin-top: 20px;
+      ul {
+        margin-bottom: 20px;
+        li {
+          padding: 0 8px;
+        }
       }
     }
     .companys {
@@ -304,10 +461,8 @@ px      68    160    252    */
         margin-right: -15px;
       }
       li {
-        /* 移动端先显示两个吧,容器宽是 345px; */
-        width: 165px;
-        margin: 10px 0;
-        margin-right: 15px;
+        width: 48%;
+        margin: 0;
         .img-heading {
           padding: 5px 0 5px 13px;
           h2 {
@@ -337,35 +492,60 @@ px      68    160    252    */
       }
     }
   }
+  .post-index {
+    .post-area {
+      padding: 40px 0;
+    }
+  }
+  .post,
+  .experience {
+    padding-top: 20px;
+    .back {
+      padding: 10px;
+      margin-top: 20px;
+    }
+  }
 
   /*-- About --*/
-  #about {
+  .about {
+    .inner {
+      padding: 20px 0;
+      .basic,
+      .carousel {
+        width: 100%;
+        float: none;
+        padding: 0;
+      }
+    }
     .block {
-      width: 88%;
-      margin: 0 auto;
+      width: 100%;
+      h2 {
+        padding-bottom: 10px;
+        font-size: 24px;
+      }
+      h4 {
+        margin-top: 30px;
+        padding-bottom: 20px;
+        font-size: 20px;
+      }
+      .basic-info {
+        li {
+          white-space: nowrap;
+        }
+      }
     }
     .glide-self {
       margin-top: 50px;
+      height: 435px;
+      padding: 15px;
+      width: 100%;
+      box-sizing: border-box;
+      img {
+        height: 300px;
+        padding-bottom: 15px
+      }
     }
   }
-
-  #intro {
-    padding-top: 0;
-    .container {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-  }
-
-  .post,
-  .experience {
-    .back {
-      text-align: center;
-      padding: 10px;
-      margin: 0;
-    }
-  }
-
 }
 
 /*	Wide Mobile Layout: 480px.
@@ -379,3 +559,32 @@ px      68    160    252    344    436    */
   Overrides styles for devices with a
   device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
+@media only screen and (max-width: 320px) {
+  .home-header {
+    h1 {
+      letter-spacing: 2px;
+    }
+  }
+  .home-what {
+    .inner {
+      padding-left: 32%;
+    }
+  }
+  .about {
+    .container {
+      margin: 0 10px;
+      .inner {
+        padding-top: 8px;
+      }
+      h2 {
+        font-size: 22px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+      .fa {
+        margin-right: 5px;
+      }
+    }
+  }
+}

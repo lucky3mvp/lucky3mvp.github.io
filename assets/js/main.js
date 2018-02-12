@@ -21,6 +21,15 @@ $(document).ready(function () {
     }
   }
 
+  $('#mobile-nav').click(() => {
+    let menu = $('.nav');
+    if(menu.hasClass('show')) {
+      menu.removeClass('animated slideInRight show');
+    } else {
+      menu.addClass('animated slideInRight show');
+    }
+  });
+
   // google map
   // var map;
   // function initMap() {
