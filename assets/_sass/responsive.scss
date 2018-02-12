@@ -9,8 +9,20 @@
     margin: 0 100px;
   }
   .container {
-    width: 1020px;
+    width: 1420px;
     margin: 0 auto;
+  }
+  .home-wish {
+    .wish-list {
+      .wish-item {
+        max-width: 300px;
+      }
+    }
+  }
+  .about {
+    .glide-self {
+      width: 65%;
+    }
   }
 }
 

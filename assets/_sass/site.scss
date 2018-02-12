@@ -130,7 +130,8 @@ header {
   margin-top: -80px;
   background: url("../img/header-bg.jpg") no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; // 先 cover 吧，这样在电脑和大屏上都是OK的，只在横屏的ipad上有些问题，以后再调吧
+  background-position: center 0%;
   color: #E3E3E4;
   position: relative;
   &:before {
@@ -150,7 +151,6 @@ header {
 }
 /*-- 首页大头图 --*/
 .home-header {
-  background-position: 10% 0%;
   padding: 165px 0 150px 0;
   &:before {
     background: linear-gradient(to left, #8b86a3, #322e40);
@@ -363,7 +363,7 @@ header {
   }
   .companys {
     ul {
-      margin-right: -20px;
+      // margin-right: -20px;
     }
     li {
       float: left;
