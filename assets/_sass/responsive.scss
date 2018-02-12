@@ -29,35 +29,6 @@
     width: 1020px;
     margin: 0 auto;
   }
-  // header {
-  //   background: transparent;
-  //   position: relative;
-  //   z-index: 1;
-  //   padding: 10px 0;
-  //   .container {
-  //     width: auto;
-  //     margin-left: 50px;
-  //     margin-right: 40px;
-  //   }
-  // }
-  // .global-header {
-  //   margin-top: -80px;
-  //   padding-top: 145px;
-  // }
-  // .home-header {
-  //   margin-top: -80px;
-  //   box-sizing: border-box;
-  //   height: 100vh;
-  //   padding-top: 200px;
-  // }
-  // .post,
-  // .experience {
-  //   .back {
-  //     text-align: center;
-  //     padding: 30px;
-  //     margin: 0;
-  //   }
-  // }
 }
 
 /**
@@ -451,6 +422,7 @@
       padding: 0;
       margin: 0;
       display: flex;
+      justify-content: space-between;
       .wish-item {
         margin-top: 20px;
         padding: 20px 0 0;
