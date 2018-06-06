@@ -17,7 +17,7 @@ permalink: /posts/
     <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
     <p class="post-date">{{ post.date | date: "%Y-%m-%d" }}</p>
     <p>
-      {{ post.content | strip_html | truncatewords: 40 }}
+      {{ post.content | strip_html | truncatewords: 30 }}
     </p>
   </div>
   {% endfor %}
